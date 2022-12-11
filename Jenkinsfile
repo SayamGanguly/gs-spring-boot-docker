@@ -7,11 +7,15 @@ pipeline {
     }
     
     stage("Change Directory") {
-      sh 'cd gs-spring-boot-docker/complete'
+      steps{
+        sh 'cd gs-spring-boot-docker/complete'
+      }
     }
     
     stage("Show content"){
-      sh 'ls -lrt'
+      steps{
+        sh 'ls -lrt'
+      }
     }
   }
 }
