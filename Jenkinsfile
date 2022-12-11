@@ -22,8 +22,7 @@ pipeline {
     
     stage("Build jar"){
       steps{
-        sh 'cd gs-spring-boot-docker/complete'
-        sh 'ls -lrt'
+        sh 'ls -lrt gs-spring-boot-docker/complete'
       }
     }
   }
