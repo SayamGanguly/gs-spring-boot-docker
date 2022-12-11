@@ -2,7 +2,7 @@ pipeline {
   agent any
   stages{
     
-    stage{"Remove"){
+    stage("Remove"){
       steps{
         sh "rm -rf gs-spring-boot-docker"
       }
