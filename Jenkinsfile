@@ -1,7 +1,9 @@
 pipeline {
   stages{
     stage("Clone Repository"){
-      checkout scm
+      steps{
+        checkout scm
+      }
     }
     
     stage("Change Directory") {
