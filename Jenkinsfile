@@ -22,7 +22,7 @@ pipeline {
     
     stage("Build jar"){
       steps{
-        sh 'ls -lrt gs-spring-boot-docker/complete'
+        sh './gs-spring-boot-docker/complete/mvnw package'
       }
     }
   }
