@@ -3,7 +3,7 @@ pipeline {
   stages{
     stage("Clone Repository"){
       steps{
-        checkout scm
+        sh 'git clone https://github.com/SayamGanguly/gs-spring-boot-docker.git'
       }
     }
     
